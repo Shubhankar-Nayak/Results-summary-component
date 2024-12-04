@@ -8,7 +8,7 @@ import image4 from '../assets/images/icon-visual.svg'
 const Container = () => {
   return (
     <div className='w-[100%] h-full flex tablet:justify-center tablet:items-center'>
-    <div className='w-[100%] h-full tablet:w-[55%] tablet:h-[55%] tablet:mx-auto tablet:my-auto flex flex-col tablet:flex-row shadow-2xl tablet:rounded-[2rem] font-Hanken'>
+    <div className='w-[100%] h-full tablet:w-[55%] tablet:h-[55%] tablet:min-h-[400px] tablet:mx-auto tablet:my-auto flex flex-col tablet:flex-row shadow-2xl tablet:rounded-[2rem] font-Hanken'>
         <div className='w-[100%] h-[45%] tablet:w-[50%] tablet:h-full rounded-b-[2rem] tablet:rounded-t-[2rem] flex flex-col justify-center items-center text-white bg-gradient-to-t from-LightRoyalBlue to-LightSlateBlue'>
             <p className='text-[20px] p-5 font-bold text-LightLavender'>Your Result</p>
             <div className='flex flex-col justify-center items-center rounded-full bg-gradient-to-b from-LightRoyalBlue text-center p-3 aspect-square'>
@@ -25,7 +25,7 @@ const Container = () => {
                 <div className={`flex items-center ${i.category === "Reaction" ? "bg-[#fef2f2]" :
                                                      i.category === "Memory" ? "bg-[#fefce8]" :
                                                      i.category === "Verbal" ? "bg-[#f0fdf4]" :
-                                                     i.category === "Visual" ? "bg-[#eff6ff]" : "bg-[]"} py-4 mb-4 rounded-2xl justify-between`}>
+                                                     i.category === "Visual" ? "bg-[#eff6ff]" : "bg-[]"} py-4 mb-4 tablet:mb-2 rounded-2xl justify-between`}>
                   <div className='flex'>
                     <img className='size-6 mx-4' src={`${i.category === "Reaction" ? image1 :
                                                    i.category === "Memory" ? image2 :
